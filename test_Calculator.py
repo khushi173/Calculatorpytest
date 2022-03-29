@@ -1,6 +1,7 @@
 import Calculator
 import pytest
-@pytest.mark.parametrize("a,b,c",[(3,2,5),(10,2,12),(7,8,15),(2,5,8)])
+@pytest.mark.xfail
+@pytest.mark.parametrize("a,b,c",[(3,2,5),(10,2,16),(7,8,15),(2,5,8)])
 def test_add(a,b,c):
     result = Calculator.add(a,b)
     assert c ==result
