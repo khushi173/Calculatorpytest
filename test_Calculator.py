@@ -5,11 +5,11 @@ import pytest
 def test_add(a,b,c):
     result = Calculator.add(a,b)
     assert c ==result
-@pytest.mark.parametrize("a,b,c",[(10,2,8),(10,2,8),(8,7,1),(12,5,7)])
+@pytest.mark.parametrize("a,b,c",[(10,2,8),(10,2,18),(8,7,2),(12,5,7)])
 def test_sub(a,b,c):
     result = Calculator.sub(a,b)
     assert c ==result
-@pytest.mark.parametrize("a,b,c",[(3,2,6),(10,12,120),(7,8,56),(2,5,10)])
+@pytest.mark.parametrize("a,b,c",[(3,2,5),(10,12,120),(7,8,56),(2,5,10)])
 def test_mul(a,b,c):
     result= Calculator.mul(a,b)
     assert c ==result
